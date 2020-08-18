@@ -3,7 +3,10 @@
 клонировать репозиторий и перейти в папку
 если не установлен pipenv выполнить в командной строке
 
+pip instal pipenv
+
 создать базу данных postgresql и в settings_local изменить данные на свои
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -14,18 +17,21 @@ DATABASES = {
         'PORT': '5432'
     }
 }
+
 Далее установить зависимости.
-pip instal pipenv
 
 pipenv shell
+
 pipenv install
 
 python manage.py migrate
 
 создать пользователя 
+
 python manage.py createsuperuser
 
 Запустить сервер.
+
 python manage.py runserver
 
 
