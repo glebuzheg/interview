@@ -1,5 +1,5 @@
 from django.urls import path, include
 
 urlpatterns = [
-    path('auth/', include('apps.vote.urls')),
+    path('votes/', include('apps.vote.urls')),
 ]

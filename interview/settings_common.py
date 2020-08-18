@@ -130,3 +130,11 @@ STATICFILES_DIRS = (
 
 MEDIA_ROOT = Path(BASE_DIR).joinpath('media')
 MEDIA_URL = '/media/'
+
+# REST FRAMEWORK
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ]
+}
